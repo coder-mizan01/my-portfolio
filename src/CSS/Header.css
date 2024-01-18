@@ -1,0 +1,122 @@
+
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 50px 15px 30px;
+}
+
+.logo h3{
+    position: absolute;
+    left: 30px;
+    top: 35px;
+    z-index: 999;
+    font-size: 1.8rem;
+    font-weight:bold;
+    color: #fff;
+
+}
+
+.menu{
+    transition: .5s;
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style-type: none;
+    list-style: none;
+    margin: 5px 10px;
+
+}
+
+.menu ul li a{
+    font-weight: 600;
+    color: #fff;
+    &:hover{
+        opacity: 0.9;
+    }
+}
+    
+.responsive_menu{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    height: 0px;
+    transition: all 0.5s;
+}
+
+.responsive_menu.open{
+    background-color: #03114D;
+    height: 260px;
+    transition: all 0.5s;
+}
+.responsive_menu ul{
+    margin-top: 50px;   
+}
+.responsive_menu ul li{
+    list-style-type: none;
+    text-align: center;
+    margin: 12px 0px;
+    
+}
+
+.responsive_menu ul li a{   
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+
+.menu ul li a{
+    color: #fff;
+    font-size: 1.2rem;
+    padding:0px 5px;
+    margin: 0px;
+    text-decoration: none;
+
+}
+
+.icon_div{
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.menu_icon{
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+
+
+.menu_icon path{
+    font-size: 10px;
+}
+
+
+@media(max-width:870px){
+    #header{
+        padding: 0px;
+        margin: 0px 0px 80px 0px; 
+    }
+    .menu{
+        display: none;
+    }
+    .icon_div{
+        display: grid;
+        place-content: center;
+    }
+    
+}

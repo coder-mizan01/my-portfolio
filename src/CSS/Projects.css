@@ -1,0 +1,99 @@
+
+
+#projects{
+ display:block; 
+ width: 100%;
+ background-color: #eef2f5;
+ text-align: center;
+ color: #FFF;
+ padding: 40px 15px 50px 15px;
+
+}
+#projects h2{
+  font-size: 2.1rem;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+
+.project{
+  display:inline-flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+  background-color: rgb(22, 41, 66);
+  width: 500px;
+  height: auto;
+  border-radius: .8em;
+  margin: 5px 30px 5px 30px;
+  cursor: pointer;
+
+}
+
+.project-overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #3954DE;
+  width:550px;
+  height:252px;
+  border-radius: 50%;
+  margin: 0px 10px 0px 10px;
+  top: 250px;
+  left: 600px;
+  transition: .3s ease-in-out;
+  
+}
+.project:hover > .project-overlay{
+  top: 0px;
+  left: -10px;
+  border-radius:0;
+  transition: .4s ease-in-out;
+  
+}
+.project-overlay a{
+  display: block;
+  background-color: #ddd;
+  text-decoration: none;
+  border-radius: .2em;
+  border: none;
+  cursor: pointer;
+  margin: 0px 8px;
+}
+
+.project-overlay .live-button{
+  padding: 10px 25px;
+}
+.project-overlay .code-button{
+  padding: 10px 20px;
+}
+
+.project img{
+  border-radius: .8em;
+  width:100%;
+  height: auto;
+
+}
+
+
+@media (max-width:990px){
+  .project{
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width:768px){
+  #projects{
+
+  }
+  .project{
+    margin: 5px 0px 5px 0px;
+    width: 300px;
+  }
+  .project-overlay{
+    width:300px;
+    height:150px;
+  }
+}
