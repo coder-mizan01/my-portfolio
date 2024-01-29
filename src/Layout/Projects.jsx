@@ -23,8 +23,8 @@ export const Projects = () => {
             <Link to={`https://test-taker.netlify.app`} target='blank'  className='live-button'>Live</Link>
             <Link to={`https://github.com/coder-mizan01/Test-Taker`} target='blank' 
              className='code-button'>Code</Link>
-          </div>
-               <img src="project1.JPG" alt="" />
+          </div>  
+               <img src="project2.JPG" alt="" />
             </div>
 
 

@@ -32,8 +32,10 @@
 .menu ul li a{
     font-weight: 600;
     color: #fff;
+    transition: .2s;
     &:hover{
         opacity: 0.9;
+        transition: .2s;
     }
 }
     
