@@ -24,6 +24,8 @@
 
 .left div{
     margin: 10px;   
+    animation: identity-animate .2s ease-in forwards;
+    transform: scale(1);
 }
 
 .left div:first-child h2{
@@ -33,6 +35,16 @@
   margin: 0px auto;
   color: #fff;
 }
+
+@keyframes identity-animate {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
 
 .left div:first-child h2 span:first-child{
     display: block;

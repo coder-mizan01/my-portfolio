@@ -23,7 +23,7 @@ const Cover = () => {
           <div className="left">
 
             <div className="">
-              <h2 className="name">
+              <h2 className="identity">
                 <span>Hello my name is </span> Mizanur Rahman Sazu and I am a
                 <span> Front-End</span> developer
               </h2>

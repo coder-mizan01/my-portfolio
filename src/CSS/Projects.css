@@ -19,7 +19,7 @@
 .project{
   display:inline-flex;
   position: relative;
-  overflow: hidden;
+  overflow:hidden;
   justify-content: space-between;
   background-color: rgb(22, 41, 66);
   width: 500px;
@@ -36,19 +36,18 @@
   align-items: center;
   position: absolute;
   background-color: #3954DE;
-  width:550px;
-  height:252px;
-  border-radius: 50%;
+  width:600px;
+  height:600px;
+  border-radius: 100%;
   margin: 0px 10px 0px 10px;
   top: 250px;
-  left: 600px;
-  transition: .3s ease-in-out;
+  left: 300px;
+  transition: .4s ease-in-out;
   
 }
 .project:hover > .project-overlay{
-  top: 0px;
-  left: -10px;
-  border-radius:0;
+  top: -145px;
+  left: -50px;
   transition: .4s ease-in-out;
   
 }
