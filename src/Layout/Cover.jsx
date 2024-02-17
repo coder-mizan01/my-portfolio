@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/Cover.css";
+import "../CSS/cover.css";
 
 //icons
 
