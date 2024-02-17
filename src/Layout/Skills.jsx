@@ -1,7 +1,7 @@
 import React from 'react';
 
 //css
-import "../CSS/skills.css"
+import "../CSS/Skills.css"
 
 const Skills = () => {
   const handleValue = () =>{
