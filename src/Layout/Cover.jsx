@@ -51,7 +51,7 @@ const Cover = () => {
 
           <div className="right">
             <div>
-               <div className="img"></div>
+               <div className="img"><img src="me.jpg" alt="my image" /></div>
             </div>
           </div>
           
