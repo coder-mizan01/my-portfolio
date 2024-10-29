@@ -1,15 +1,31 @@
 
 #skills{
+    background-color: #8bc4ea61;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-inner {
     display: grid;
-    background-color:#8bc4ea61;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
     padding: 50px 25px 80px;
-    @media(max-width:990px){
-       grid-template-columns: repeat(1,1fr);
+    width: 100%; /* Add this to ensure proper width control */
+    
+    @media(min-width: 1367px) {
+        grid-template-columns: repeat(2,1fr);
+        padding: 50px 25px 80px;
+        max-width: 1366px;
+        align-content: center;
+        margin: 0 auto; /* Add this to help with centering */
     }
-
+    
+    @media(max-width: 990px) {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
+
 #skills .title{
     grid-column: 1/-1;
     font-size: 2rem;

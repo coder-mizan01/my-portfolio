@@ -5,6 +5,7 @@
     justify-content: center;
     background-image: linear-gradient(rgb(6 17 64 / 90%), rgba(1,19,98,.9)),
     url('bg2.jpg');
+    width: 100%;
     max-width: 100%;
     height: fit-content;
 }
@@ -12,6 +13,10 @@
 
 .cover_content{
     display: flex;
+    @media(min-width :1367px) {
+        width: 1366px;
+        margin: 0 auto;
+    }
 }
 
 .cover_content .left{
@@ -125,7 +130,7 @@
     flex: 1;
 }
 
-.right div .img{
+.cover_content .right div .img{
     background-image: url('me.jpg');
     background-size: cover;
     background-position: center;

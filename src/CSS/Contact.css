@@ -1,71 +1,91 @@
-
-#contact{
-    display: block;
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #031251;
-
+    width: 100%;
 }
 
-#contact h2{
+#contact h2 {
     text-align: center;
     font-size: 2.5rem;
     color: #FFF;
     padding: 30px 0px 30px 0px;
 }
 
-#form{
+#form {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding: 50px 35px;
+    width: 100%;
+    max-width: 1366px; /* Add max-width for larger screens */
 }
 
-#form div{
+#form div {
     display: flex;
     width: 100%;
     margin: 8px;
     flex-direction: column;
 }
-#form div label{
+
+#form div label {
     display: block;
     color: #ffff;
     text-indent: 4px;
     margin-bottom: 5px;
 }
-#form div input{ 
-   width: 70%;
-   height: 50px;
-   outline: none;
-   border-radius: .4em;
-   text-indent: 10px;
+
+#form div input { 
+    width: 70%;
+    height: 50px;
+    outline: none;
+    border-radius: .4em;
+    text-indent: 10px;
 }   
 
-#form div textarea{
+#form div textarea {
     width: 70%;
     height: 100px;
     text-indent: 5px;
     padding-top: 5px;
     font-size: 1rem;
     outline: none;
-
-    
-    
 }
 
-#form div button{
+#form div button {
     width: 20%;
     margin-top: 15px;
     padding: 10px 25px;
     border-radius: .4em;
-    
 }
 
+/* Media query for larger screens */
+@media(min-width: 1367px) {
+    #form {
+        width: 90%;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
 
-@media(max-width:990px){
-    #form{
+    #form div input,
+    #form div textarea {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    #form div button {
+        width: 150px;
+    }
+}
+
+/* Media query for smaller screens */
+@media(max-width: 990px) {
+    #form {
         display: block;
         padding: 50px 10px;
     }
 
-    #form div button{
+    #form div button {
         width: 25%;
     }
 }

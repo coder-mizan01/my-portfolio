@@ -25,9 +25,9 @@ const Cover = () => {
             <div className="">
               <h2 className="identity">
                 <span>Hello my name is </span> Mizanur Rahman Sazu and I am a
-                <span> Front-End</span> developer
+                <span> web</span> developer
               </h2>
-              <Link className="cover_btn">see my works</Link>
+              <a href={`#projects`} className="cover_btn">see my works</a>
             </div>
 
             <div className="icons">
@@ -35,7 +35,7 @@ const Cover = () => {
                 <FontAwesomeIcon icon={faFacebookF} className="icon" />
               </Link>
               <Link to={
-                  "https://www.linkedin.com/in/mizanur-rahman-sazu-3a139828b"
+                  "https://www.linkedin.com/in/sazu"
                 } target="_blank"
 
               >
@@ -51,7 +51,7 @@ const Cover = () => {
 
           <div className="right">
             <div>
-               <div className="img"><img src="me.jpg" alt="my image" /></div>
+               <div className="img"></div>
             </div>
           </div>
           

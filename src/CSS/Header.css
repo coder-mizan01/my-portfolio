@@ -1,9 +1,18 @@
 
 
 #header{
+
+    width: 100%;
+}
+
+#header .inner-header{
     display: flex;
     justify-content: space-between;
-    padding: 35px 50px 15px 30px;
+    padding: 35px 50px 15px 30px;    
+    @media(min-width:1367px) {
+        width: 1366px;
+        margin: 0 auto;
+    }
 }
 
 .logo h3{
@@ -14,7 +23,9 @@
     font-size: 1.8rem;
     font-weight:bold;
     color: #fff;
-
+    @media(min-width:1367px) {
+        position : static;
+    }
 }
 
 .menu{

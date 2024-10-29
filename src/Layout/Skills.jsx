@@ -11,6 +11,7 @@ const Skills = () => {
     <>
 
     <section id='skills'>
+      <div className="skills-inner">
         <div className='title'><h2>Skills</h2></div>
     <div className='html_css'>
       <label htmlFor="">html & css</label>
@@ -42,7 +43,7 @@ const Skills = () => {
       <input type="range" min="1" max="100" value="35"  onChange={handleValue} />
     </div>  
   
-      
+    </div>
     </section>
     </>
   )
